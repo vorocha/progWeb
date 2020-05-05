@@ -7,6 +7,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testeRouter = require('./routes/teste');
 const fornecedor = require('./routes/fornecedor');
+const cliente = require('./routes/cliente');
+const venda = require('./routes/venda');
 
 var app = express();
 const db = require('./config/database');
@@ -22,5 +24,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/teste', testeRouter);
 app.use('/fornecedor', fornecedor);
+app.use('/cliente', cliente);
+app.use('/venda', venda);
 
 module.exports = app;

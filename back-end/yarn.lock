@@ -21,6 +21,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"async@npm:^2.5.0":
+  version: 2.6.3
+  resolution: "async@npm:2.6.3"
+  dependencies:
+    lodash: ^4.17.14
+  checksum: 2/5c30ec6f3d64308dd96d56dae16a00a23b9e6278fe8f66492837896d958508698648c59c53457d3fdf05fd04484e16538efeca2be38337cd78df0284e764ab34
+  languageName: node
+  linkType: hard
+
 "back-end@workspace:.":
   version: 0.0.0-use.local
   resolution: "back-end@workspace:."
@@ -29,6 +38,7 @@ __metadata:
     debug: ~2.6.9
     express: ~4.16.1
     mongoose: ^5.9.1
+    mongoose-sequence: ^5.2.2
     morgan: ~1.9.1
   languageName: unknown
   linkType: soft
@@ -319,6 +329,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash@npm:^4.17.11, lodash@npm:^4.17.14":
+  version: 4.17.15
+  resolution: "lodash@npm:4.17.15"
+  checksum: 2/aec3fbb7570aa67bda500b8299b1b1821d60646bede87f76a74dfcc7666ab3445267d734ec71424d70809d52ad67a1356fab5ab694a3faa1908d68e9d48f00f5
+  languageName: node
+  linkType: hard
+
 "media-typer@npm:0.3.0":
   version: 0.3.0
   resolution: "media-typer@npm:0.3.0"
@@ -395,6 +412,18 @@ __metadata:
   peerDependencies:
     mongoose: "*"
   checksum: 2/a1f86450b3540a1883cfb093001846806d14cd3a8b80f6681fdac13afcfd4a1f57875fb79009aceacf2e80e3ffd2d5ab7e289ba873c586958ce536eff270dc0a
+  languageName: node
+  linkType: hard
+
+"mongoose-sequence@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "mongoose-sequence@npm:5.2.2"
+  dependencies:
+    async: ^2.5.0
+    lodash: ^4.17.11
+  peerDependencies:
+    mongoose: ">=4"
+  checksum: 2/6f424d6120348d436f9b7c010ed11cdb1bfdfa31c3fe26836d0009dea22b431ddfc07da0d60091bfb368449865d90387923e35deca4bdda26bd31593ab837065
   languageName: node
   linkType: hard
 

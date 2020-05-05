@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:3c4f7f349789d7597b53f6806dcbf71445596dd97a6a139314a632324e544d12b73623cfb0621bb9d37d8830b5ffbaf5935d9d709ca211a5a162bb877a1524e9#npm:2.6.9"],
             ["express", "npm:4.16.4"],
             ["mongoose", "npm:5.9.1"],
+            ["mongoose-sequence", "virtual:25fafbda8389c48143ec253a66e0f1d208e2e325923374ae21701ad7376cb586ef66fbd4fc96981c4fd19ebb08d81bad7eaca0bf284f7a2ae734c8e24f1760cb#npm:5.2.2"],
             ["morgan", "npm:1.9.1"]
           ],
           "linkType": "SOFT",
@@ -64,6 +65,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["async", [
+        ["npm:2.6.3", {
+          "packageLocation": "./.yarn/cache/async-npm-2.6.3-2de4150248-2.zip/node_modules/async/",
+          "packageDependencies": [
+            ["async", "npm:2.6.3"],
+            ["lodash", "npm:4.17.15"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["back-end", [
         ["workspace:.", {
           "packageLocation": "./",
@@ -73,6 +84,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:3c4f7f349789d7597b53f6806dcbf71445596dd97a6a139314a632324e544d12b73623cfb0621bb9d37d8830b5ffbaf5935d9d709ca211a5a162bb877a1524e9#npm:2.6.9"],
             ["express", "npm:4.16.4"],
             ["mongoose", "npm:5.9.1"],
+            ["mongoose-sequence", "virtual:25fafbda8389c48143ec253a66e0f1d208e2e325923374ae21701ad7376cb586ef66fbd4fc96981c4fd19ebb08d81bad7eaca0bf284f7a2ae734c8e24f1760cb#npm:5.2.2"],
             ["morgan", "npm:1.9.1"]
           ],
           "linkType": "SOFT",
@@ -422,6 +434,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["lodash", [
+        ["npm:4.17.15", {
+          "packageLocation": "./.yarn/cache/lodash-npm-4.17.15-566d9324f7-2.zip/node_modules/lodash/",
+          "packageDependencies": [
+            ["lodash", "npm:4.17.15"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["media-typer", [
         ["npm:0.3.0", {
           "packageLocation": "./.yarn/cache/media-typer-npm-0.3.0-8674f8f0f5-2.zip/node_modules/media-typer/",
@@ -526,6 +547,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/mongoose-legacy-pluralize-virtual-2268f69c64/0/cache/mongoose-legacy-pluralize-npm-1.0.2-2fbdda9a5a-2.zip/node_modules/mongoose-legacy-pluralize/",
           "packageDependencies": [
             ["mongoose-legacy-pluralize", "virtual:434044cefdd9cd10b00524d0f71840a65942dca5bcd695d25c82dd05c3b03d913a532be8d6d3bf1befe66a40eff719cff8bddf3177e37b417425352516755abc#npm:1.0.2"],
+            ["mongoose", "npm:5.9.1"]
+          ],
+          "packagePeers": [
+            "mongoose"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["mongoose-sequence", [
+        ["virtual:25fafbda8389c48143ec253a66e0f1d208e2e325923374ae21701ad7376cb586ef66fbd4fc96981c4fd19ebb08d81bad7eaca0bf284f7a2ae734c8e24f1760cb#npm:5.2.2", {
+          "packageLocation": "./.yarn/$$virtual/mongoose-sequence-virtual-7746f91d12/0/cache/mongoose-sequence-npm-5.2.2-2ce56d2a9e-2.zip/node_modules/mongoose-sequence/",
+          "packageDependencies": [
+            ["mongoose-sequence", "virtual:25fafbda8389c48143ec253a66e0f1d208e2e325923374ae21701ad7376cb586ef66fbd4fc96981c4fd19ebb08d81bad7eaca0bf284f7a2ae734c8e24f1760cb#npm:5.2.2"],
+            ["async", "npm:2.6.3"],
+            ["lodash", "npm:4.17.15"],
             ["mongoose", "npm:5.9.1"]
           ],
           "packagePeers": [
