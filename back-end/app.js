@@ -10,6 +10,7 @@ const fornecedor = require('./routes/fornecedor');
 const produto = require('./routes/produto');
 const cliente = require('./routes/cliente');
 const venda = require('./routes/venda');
+const item_venda = require('./routes/item_venda');
 
 var app = express();
 const db = require('./config/database');
@@ -28,5 +29,6 @@ app.use('/fornecedor', fornecedor);
 app.use('/produto', produto);
 app.use('/cliente', cliente);
 app.use('/venda', venda);
+app.use('/item-venda', item_venda);
 
 module.exports = app;
