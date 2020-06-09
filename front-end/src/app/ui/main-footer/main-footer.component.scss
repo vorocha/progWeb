@@ -1,0 +1,24 @@
+mat-toolbar{
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  padding: 4px;
+
+  p{
+    display:block;
+    width:100%;
+    font-size: 70%;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
+  }
+
+  a{
+    color:#fff;
+    text-decoration: none;
+
+    &:hover{
+      color:lightpink;
+    }
+  }
+}

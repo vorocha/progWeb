@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["cookie-parser", "npm:1.4.4"],
+            ["cors", "npm:2.8.5"],
             ["debug", "virtual:3c4f7f349789d7597b53f6806dcbf71445596dd97a6a139314a632324e544d12b73623cfb0621bb9d37d8830b5ffbaf5935d9d709ca211a5a162bb877a1524e9#npm:2.6.9"],
             ["express", "npm:4.16.4"],
             ["mongoose", "npm:5.9.1"],
@@ -81,6 +82,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["back-end", "workspace:."],
             ["cookie-parser", "npm:1.4.4"],
+            ["cors", "npm:2.8.5"],
             ["debug", "virtual:3c4f7f349789d7597b53f6806dcbf71445596dd97a6a139314a632324e544d12b73623cfb0621bb9d37d8830b5ffbaf5935d9d709ca211a5a162bb877a1524e9#npm:2.6.9"],
             ["express", "npm:4.16.4"],
             ["mongoose", "npm:5.9.1"],
@@ -209,6 +211,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/core-util-is-npm-1.0.2-9fc2b94dc3-2.zip/node_modules/core-util-is/",
           "packageDependencies": [
             ["core-util-is", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cors", [
+        ["npm:2.8.5", {
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-2.zip/node_modules/cors/",
+          "packageDependencies": [
+            ["cors", "npm:2.8.5"],
+            ["object-assign", "npm:4.1.1"],
+            ["vary", "npm:1.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -628,6 +641,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/negotiator-npm-0.6.2-ba538e167a-2.zip/node_modules/negotiator/",
           "packageDependencies": [
             ["negotiator", "npm:0.6.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["object-assign", [
+        ["npm:4.1.1", {
+          "packageLocation": "./.yarn/cache/object-assign-npm-4.1.1-1004ad6dec-2.zip/node_modules/object-assign/",
+          "packageDependencies": [
+            ["object-assign", "npm:4.1.1"]
           ],
           "linkType": "HARD",
         }]

@@ -3,6 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testeRouter = require('./routes/teste');
@@ -13,6 +14,10 @@ const venda = require('./routes/venda');
 const item_venda = require('./routes/item_venda');
 
 var app = express();
+
+const cors = require('cors');
+app.use(cors());
+
 const db = require('./config/database');
 db('mongodb://localhost:27017/progWeb');
 
