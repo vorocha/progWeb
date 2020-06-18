@@ -3,4 +3,57 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+#container{
+  padding:20px 38px;
+}
 
+.mat-table{
+  width:100%;
+}
+
+/*Ocutar por padrão os botões das tabelas de dados*/
+.mat-row{
+
+  
+  .mat-raised-button{
+    visibility: hidden;
+  }
+  &:hover {
+    filter: brightness(110%);
+    
+    .mat-raised-button{
+      visibility: visible;
+    }
+  }
+}
+.new-item-buttom-container{
+  margin-bottom: 20px;
+  text-align: right;
+
+  .mat-raised-button{
+    font-size:120%;
+  }
+}
+
+.std-form{
+  max-width: 80%;
+  margin: 0 auto;
+  mat-form-field{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin-right: 30px;
+  }
+}
+
+.mat-form-field-prefix{
+  margin-right: 10px;
+}
+.form-buttons{
+  background: transparent;
+
+  mat-toolbar-row{
+    display: flex;
+    justify-content: space-around;
+  }
+}

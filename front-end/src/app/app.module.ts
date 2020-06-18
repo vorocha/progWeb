@@ -10,20 +10,28 @@ import { MainMenuComponent } from './ui/main-menu/main-menu.component';
 import { MainFooterComponent } from './ui/main-footer/main-footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FornecedorListComponent } from './fornecedor/fornecedor-list/fornecedor-list.component';
+import { ConfirmDlgComponent } from './ui/confirm-dlg/confirm-dlg.component';
+import { FornecedorFormComponent } from './fornecedor/fornecedor-form/fornecedor-form.component';
+import { FormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
 @NgModule({
   declarations: [
     AppComponent,
     MainToolbarComponent,
     MainMenuComponent,
     MainFooterComponent,
-    FornecedorListComponent
+    FornecedorListComponent,
+    ConfirmDlgComponent,
+    FornecedorFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,52 @@
+<h1>{{ title }}</h1>
+
+<form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
+
+  <mat-form-field>
+    <mat-label>Razão Social</mat-label>
+    <input matInput [(ngModel)]="fornecedor.razao_social" name="razao_social" required  placeholder="Informe a Razão Social da Empresa">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Nome Fantasia</mat-label>
+    <input matInput [(ngModel)]="fornecedor.nome_fantasia" name="nome_fantasia" placeholder="Informe o nome Fantasia (opcional)">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>CNPJ</mat-label>
+    <input matInput [(ngModel)]="fornecedor.cnpj" name="cnpj" required placeholder="Informe o CNPJ" mask="00.000.000/0000-00">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Inscrição Estadual</mat-label>
+    <input matInput [(ngModel)]="fornecedor.inscricao_estadual" name="inscricao_estadual" required  placeholder="Informe a Inscrição Estadual">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Endereço</mat-label>
+    <textarea matInput [(ngModel)]="fornecedor.endereco" name="endereco" required  placeholder="Informe o Endereço" rows="4"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Telefone</mat-label>
+    <mat-icon matPrefix>contact_phone</mat-icon>
+    <input matInput [(ngModel)]="fornecedor.telefone" name="telefone" required  placeholder="Informe o Telefone">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <mat-icon matPrefix>contact_phone</mat-icon>
+    <input matInput [(ngModel)]="fornecedor.email" name="email" required type="email" placeholder="Informe o Email">
+  </mat-form-field>
+
+  <mat-toolbar class="form-buttons">
+    <mat-toolbar-row>
+       <button mat-raised-button type="submit" color="accent">
+          Salvar
+       </button>
+       <button mat-raised-button type="button" (click)="voltar(f)">
+          Voltar
+       </button>
+    </mat-toolbar-row>
+ </mat-toolbar>
+</form>
