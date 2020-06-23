@@ -2,6 +2,8 @@ import { FornecedorFormComponent } from './fornecedor/fornecedor-form/fornecedor
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FornecedorListComponent } from './fornecedor/fornecedor-list/fornecedor-list.component';
+import { VendaListComponent } from './venda/venda-list/venda-list.component';
+import { VendaFormComponent } from './venda/venda-form/venda-form.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,18 @@ const routes: Routes = [
   {
     path: 'fornecedor/:id', // Editar um fornecedor já existente
     component: FornecedorFormComponent
+  },
+  {
+    path: 'venda', // NO angular não se usa a barra no começo da rota
+    component: VendaListComponent
+  },
+  {
+    path: 'venda/novo', // caminho para cadastrar nova venda
+    component: VendaFormComponent
+  },
+  {
+    path: 'venda/:id', // Editar uma venda já existente
+    component: VendaFormComponent
   }
 ];
 
