@@ -20,6 +20,25 @@ export class VendaFormComponent implements OnInit {
 
   clientes : any = [] //Vetor Vazio
 
+  formasPagamento: any = [
+    {
+      codigo: 'DI',
+      nome: 'DI- dinheiro'
+    },
+    {
+      codigo: 'CH',
+      nome: 'CH- cheque'
+    },
+    {
+      codigo: 'CC',
+      nome: 'CC- cartão de crédito'
+    },
+    {
+      codigo: 'CD',
+      nome: 'CD- cartão de débito'
+    },
+  ]
+
   constructor(
     private vendaSrv : VendaService,
     private clienteSrv : ClienteService,

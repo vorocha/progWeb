@@ -31,32 +31,31 @@
     </mat-select>
  </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>CNPJ</mat-label>
-    <input matInput [(ngModel)]="venda.cnpj" name="cnpj" required placeholder="Informe o CNPJ" mask="00.000.000/0000-00">
-  </mat-form-field>
+ <mat-form-field>
+   <mat-label>Data de Venda</mat-label>
+   <input name="data_venda" matInput [(ngModel)]="venda.data_venda"
+   [matDatepicker]="data_venda" required>
+   <mat-datepicker-toggle matSuffix [for]="data_venda"></mat-datepicker-toggle>
+   <mat-datepicker #data_venda></mat-datepicker>
+ </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Inscrição Estadual</mat-label>
-    <input matInput [(ngModel)]="venda.inscricao_estadual" name="inscricao_estadual" required  placeholder="Informe a Inscrição Estadual">
-  </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Endereço</mat-label>
-    <textarea matInput [(ngModel)]="venda.endereco" name="endereco" required  placeholder="Informe o Endereço" rows="4"></textarea>
-  </mat-form-field>
+ <mat-form-field>
+   <mat-select name="forma_pagamento" required placeholder="Selecione a Forma de Pagamento" [(ngModel)]="venda.forma_pagamento">
+      <mat-option *ngFor="let fp of formasPagamento" [value]="fp.codigo">
+         {{fp.nome}}
+      </mat-option>
+   </mat-select>
+</mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Telefone</mat-label>
-    <mat-icon matPrefix>contact_phone</mat-icon>
-    <input matInput [(ngModel)]="venda.telefone" name="telefone" required  placeholder="Informe o Telefone">
-  </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>Email</mat-label>
-    <mat-icon matPrefix>contact_phone</mat-icon>
-    <input matInput [(ngModel)]="venda.email" name="email" required type="email" placeholder="Informe o Email">
-  </mat-form-field>
+<mat-form-field>
+   <mat-label>Data de Pagamento</mat-label>
+   <input name="data_pagamento" matInput [(ngModel)]="venda.data_pagamento"
+   [matDatepicker]="data_pagamento">
+   <mat-datepicker-toggle matSuffix [for]="data_pagamento"></mat-datepicker-toggle>
+   <mat-datepicker #data_pagamento></mat-datepicker>
+ </mat-form-field>
 
   <mat-toolbar class="form-buttons">
     <mat-toolbar-row>

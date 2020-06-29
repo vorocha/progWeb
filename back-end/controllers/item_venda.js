@@ -30,7 +30,7 @@ controller.listar = async (req, res) =>{
             //populate: nome do campo populado 2 nivel
             .populate({path: 'venda', populate: 'cliente'})
             //select : lista de campos selecionados
-            .populate({path:'produto', select: 'descricao data_validade fornecedor', populate: 'fornecedor'});
+            .populate({path:'produto',/* select: 'descricao data_validade fornecedor',*/ populate: 'fornecedor'});
             res.send(lista) //HTTP 200 implícito
 
         }
